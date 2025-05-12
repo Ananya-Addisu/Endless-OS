@@ -1,8 +1,6 @@
 # Endless-OS
-```mermaid
-classDiagram
-class ananya{
-int id
-string number
-}
-```
+## this is a sub title
+this is **bold**
+this is *italic*
+this is ***huletunm***
+
