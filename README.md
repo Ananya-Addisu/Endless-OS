@@ -1,12 +1,12 @@
 # EndlessOS Documentation
 
-![EndlessOS Logo](../images/logo.svg)
+![EndlessOS Logo](images/logo.svg)
 
 This repository contains comprehensive documentation for EndlessOS, a Linux-based operating system designed with simplicity and accessibility in mind. The project explores the installation, features, and technical aspects of EndlessOS.
 
 ## Table of Contents
 
-<details open>
+<details>
 <summary><strong>Main Documentation</strong></summary>
 
 - [Introduction](#introduction)
@@ -33,6 +33,9 @@ This repository contains comprehensive documentation for EndlessOS, a Linux-base
 - [Observations and Learning](#observations-and-learning)
 
 </details>
+
+<details>
+<summary><strong>Main Documentation</strong></summary>
 
 ## Introduction
 
@@ -134,7 +137,46 @@ sequenceDiagram
 6. Created user account using full name
 7. Completed the installation and rebooted into the newly installed system
 
-Please refer to the [images folder](../images) for screenshots of the installation process.
+### Installation Screenshots
+
+#### VM Setup Process
+![VM Setup Step 1](images/vm1.png)
+*Creating the new virtual machine*
+
+![VM Setup Step 2](images/vm2.png)
+*Selecting the VM type*
+
+![VM Setup Step 3](images/vm3.png)
+*Configuring the VM settings*
+
+![VM Setup Step 4](images/vm4.png)
+*Allocating resources to the VM*
+
+![VM Setup Step 5](images/vm5.png)
+*Configuring storage options*
+
+#### EndlessOS Installation Process
+![Installation Step 1](images/install1.png)
+*EndlessOS boot screen*
+
+![Installation Step 2](images/install2.png)
+*Language selection*
+
+![Installation Step 3](images/install3.png)
+*Disk partitioning options*
+
+![Installation Step 4](images/install4.png)
+*User account creation*
+
+#### First Boot and Configuration
+![First Boot Step 1](images/config1.png)
+*First boot welcome screen*
+
+![First Boot Step 2](images/config2.png)
+*Desktop environment*
+
+![First Boot Step 3](images/config3.png)
+*System settings panel*
 
 ## Issues and Solutions
 
@@ -429,6 +471,8 @@ UNIX vendors face several challenges in adhering to standardization:
 - **Evolving computing landscape:** Adapting standards to cloud, containers, and modern development practices
 
 Despite these challenges, UNIX standardization continues to be vital for ensuring application portability and system interoperability in today's diverse computing environment.
+
+</details>
 
 ## System Calls Implementation
 
