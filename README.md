@@ -256,16 +256,14 @@ EndlessOS primarily uses the **ext4** filesystem for its main partition. This ch
 
 ```mermaid
 graph TD
-    subgraph "EndlessOS Filesystem Structure"
-        A[Root Filesystem] --> B[/]
-        B --> C[/home - ext4]
-        B --> D[/var - ext4]
-        B --> E[/boot - ext4]
-        B --> F[OSTree deployment - ext4]
-        E --> G[GRUB configuration]
-        F --> H[Read-only system image]
-        F --> I[Applications]
-    end
+    A[Root Filesystem] --> B[/]
+    B --> C[/home - ext4]
+    B --> D[/var - ext4]
+    B --> E[/boot - ext4]
+    B --> F[OSTree deployment - ext4]
+    E --> G[GRUB configuration]
+    F --> H[Read-only system image]
+    F --> I[Applications]
 ```
 
 ### Other Supported Filesystems
@@ -435,19 +433,17 @@ Virtualization has fundamentally transformed modern computing, enabling cloud co
 UNIX standardization is crucial for ensuring compatibility and portability across different UNIX and UNIX-like operating systems. Standardization efforts have led to a common base of functionality that applications can rely on, regardless of the specific UNIX implementation they're running on. This has been vital for the growth of the UNIX ecosystem and the development of portable applications.
 
 ```mermaid
-timeline
-    title Evolution of UNIX Standards
-    1980s : AT&T's SVID
-           First POSIX efforts
-    1990s : X/Open's XPG
-           Creation of Single UNIX Specification
-    1996 : The Open Group formed
-    1998 : UNIX 98 specification released
-    2001 : POSIX:2001 created
-    2003 : UNIX 03 specification released
-    2008 : POSIX:2008 published
-    2010s+ : Continued evolution
-             Modern computing focus
+graph TD
+    subgraph "UNIX Standards Evolution"
+    A[UNIX Time-Sharing System] --> B[AT&T UNIX]
+    B --> C[System V]
+    B --> D[BSD]
+    C --> E[POSIX Standards]
+    D --> E
+    E --> F[Single UNIX Specification]
+    F --> G[UNIX 03]
+    G --> H[Modern UNIX/Linux Systems]
+    end
 ```
 
 ### Key Organizations in UNIX Standardization
