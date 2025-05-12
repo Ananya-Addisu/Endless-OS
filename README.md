@@ -1,4 +1,4 @@
-<div style="align: center;">
+<div style="text-align: center;">
 
 ![EndlessOS Logo](https://github.com/Ananya-Addisu/Endless-OS/blob/main/logo.svg)
 <h1>EndlessOS Documentation</h1>
@@ -53,19 +53,6 @@ flowchart TD
     D --> D1[Preloaded Knowledge Apps]
     D --> D2[Flatpak Applications]
     D --> D3[Educational Content]
-    
-    style A fill:#1E1E1E,stroke:#FFF,stroke-width:2px,color:#FFF
-    style B fill:#2A4D69,stroke:#FFF,stroke-width:1px,color:#FFF
-    style C fill:#2A4D69,stroke:#FFF,stroke-width:1px,color:#FFF
-    style D fill:#2A4D69,stroke:#FFF,stroke-width:1px,color:#FFF
-    style B1 fill:#4B86B4,stroke:#FFF,stroke-width:1px,color:#FFF
-    style B2 fill:#4B86B4,stroke:#FFF,stroke-width:1px,color:#FFF
-    style C1 fill:#4B86B4,stroke:#FFF,stroke-width:1px,color:#FFF
-    style C2 fill:#4B86B4,stroke:#FFF,stroke-width:1px,color:#FFF
-    style C3 fill:#4B86B4,stroke:#FFF,stroke-width:1px,color:#FFF
-    style D1 fill:#4B86B4,stroke:#FFF,stroke-width:1px,color:#FFF
-    style D2 fill:#4B86B4,stroke:#FFF,stroke-width:1px,color:#FFF
-    style D3 fill:#4B86B4,stroke:#FFF,stroke-width:1px,color:#FFF
 ```
 
 ## Objectives
@@ -215,17 +202,28 @@ sequenceDiagram
 *Network connectivity issue with NAT configuration*
 
 #### Solutions Implementation
-![Solution Screenshot 1](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/solution1.png)
-*Installing development packages for guest additions*
 
-![Solution Screenshot 2](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/solution2.png)
-*Changing network adapter to bridged mode*
-
-![Solution Screenshot 3](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/solution3.png)
-*Synchronizing system time to fix OSTree updates*
-
-![Solution Screenshot 4](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/solution4.png)
-*Successful update after implementing solutions*
+<div class="section-content">
+    <h3>Resolving Installation Issues</h3>
+    <ul>
+        <li>
+            <strong>Display Resolution Issue:</strong> I resolved this by manually installing the VMware Workstation Guest Additions after installing the necessary development packages. First, I installed the required dependencies:
+            <pre><code class="language-bash">$ sudo apt update
+$ sudo apt install build-essential linux-headers-$(uname -r)</code></pre>
+            Then, I mounted the Guest Additions CD and ran the installation script:
+            <pre><code class="language-bash">$ sudo sh /media/cdrom/VBoxLinuxAdditions.run</code></pre>
+            After a reboot, the display resolution adjusted properly.
+        </li>
+        <li>
+            <strong>Network Connectivity Issue:</strong> This was fixed by changing the network adapter settings in VMware Workstation from NAT to Bridged Adapter, which allowed the VM to connect directly to the network.
+        </li>
+        <li>
+            <strong>OSTree Update Errors:</strong> I found that the OSTree errors were related to the system's time being incorrect. I fixed this by synchronizing the system time:
+            <pre><code class="language-bash">$ sudo timedatectl set-ntp true</code></pre>
+            After that, the system updates proceeded normally.
+        </li>
+    </ul>
+</div>
 
 ## Issues and Solutions
 
@@ -268,26 +266,14 @@ EndlessOS primarily uses the **ext4** filesystem for its main partition. This ch
 
 ```mermaid
 graph TD
-    subgraph "EndlessOS Filesystem Structure"
-        A[Root Filesystem] --> B[/]
-        B --> C[/home - ext4]
-        B --> D[/var - ext4]
-        B --> E[/boot - ext4]
-        B --> F[OSTree deployment - ext4]
-        E --> G[GRUB configuration]
-        F --> H[Read-only system image]
-        F --> I[Applications]
-    end
-    
-    style A fill:#1E1E1E,stroke:#FFF,stroke-width:1px,color:#FFF
-    style B fill:#2A4D69,stroke:#FFF,stroke-width:1px,color:#FFF
-    style C fill:#4B86B4,stroke:#FFF,stroke-width:1px,color:#FFF
-    style D fill:#4B86B4,stroke:#FFF,stroke-width:1px,color:#FFF
-    style E fill:#4B86B4,stroke:#FFF,stroke-width:1px,color:#FFF
-    style F fill:#4B86B4,stroke:#FFF,stroke-width:1px,color:#FFF
-    style G fill:#2A4D69,stroke:#FFF,stroke-width:1px,color:#FFF
-    style H fill:#2A4D69,stroke:#FFF,stroke-width:1px,color:#FFF
-    style I fill:#2A4D69,stroke:#FFF,stroke-width:1px,color:#FFF
+    A[Root Filesystem] --> B[/]
+    B --> C[/home - ext4]
+    B --> D[/var - ext4]
+    B --> E[/boot - ext4]
+    B --> F[OSTree deployment - ext4]
+    E --> G[GRUB configuration]
+    F --> H[Read-only system image]
+    F --> I[Applications]
 ```
 
 ### Other Supported Filesystems
@@ -324,7 +310,8 @@ The OSTree system used by EndlessOS for managing the system image also has speci
 - **Limited Package Management:** Traditional apt/dpkg commands don't work as expected since the system uses OSTree and Flatpak.
 
 ```mermaid
-pie title "EndlessOS Use Case Suitability"
+pie
+    title "EndlessOS Use Case Suitability"
     "Educational Environments" : 40
     "Regions with Limited Internet" : 30
     "New Computer Users" : 20
@@ -406,9 +393,9 @@ Virtualization has become a cornerstone of modern computing for several importan
 ```mermaid
 graph LR
     A[Physical Host] --> B[Hypervisor]
-    B --> C[Virtual Machine 1<br>EndlessOS]
-    B --> D[Virtual Machine 2<br>Windows]
-    B --> E[Virtual Machine 3<br>macOS]
+    B --> C[Virtual Machine 1: EndlessOS]
+    B --> D[Virtual Machine 2: Windows]
+    B --> E[Virtual Machine 3: macOS]
     
     C --> F[vCPU]
     C --> G[vRAM]
@@ -461,23 +448,29 @@ Virtualization has fundamentally transformed modern computing, enabling cloud co
 UNIX standardization is crucial for ensuring compatibility and portability across different UNIX and UNIX-like operating systems. Standardization efforts have led to a common base of functionality that applications can rely on, regardless of the specific UNIX implementation they're running on. This has been vital for the growth of the UNIX ecosystem and the development of portable applications.
 
 ```mermaid
-timeline
-    title Evolution of UNIX Standards
-    section 1980s
-      AT&T's SVID : 1983
-      First POSIX efforts : 1988
-    section 1990s
-      X/Open's XPG : 1992
-      Single UNIX Specification : 1995
-    section 2000s
-      The Open Group formed : 1996
-      UNIX 98 released : 1998
-      POSIX:2001 created : 2001
-      UNIX 03 released : 2003
-      POSIX:2008 published : 2008
-    section 2010s
-      Continued evolution : 2010
-      Modern computing focus : 2015
+gitGraph
+    commit id: "1970s"
+    commit id: "Unix Time-Sharing System"
+    branch "BSD"
+    commit id: "Berkeley Software Distribution"
+    branch "POSIX"
+    commit id: "POSIX Standard 1988"
+    checkout main
+    commit id: "System V"
+    checkout POSIX
+    commit id: "POSIX.1 (1990)"
+    commit id: "POSIX.2 (1992)"
+    checkout main
+    merge POSIX
+    branch "X/Open"
+    commit id: "X/Open Portability Guide"
+    checkout main
+    merge X/Open
+    commit id: "Single UNIX Specification"
+    commit id: "UNIX 98"
+    commit id: "UNIX 03"
+    commit id: "POSIX:2008"
+    commit id: "Modern Unix Standards"
 ```
 
 ### Key Organizations in UNIX Standardization
@@ -538,17 +531,6 @@ UNIX vendors face several challenges in adhering to standardization:
 - **Evolving computing landscape:** Adapting standards to cloud, containers, and modern development practices
 
 Despite these challenges, UNIX standardization continues to be vital for ensuring application portability and system interoperability in today's diverse computing environment.
-<hr>
-</details>
-
-<details>
-<summary><strong>System Calls Implementation</strong></summary>
-
-- [Understanding System Calls](#understanding-system-calls)
-- [The setpgid() System Call](#the-setpgid-system-call)
-- [Implementation Process](#implementation-process)
-- [Program Output](#program-output)
-- [Observations and Learning](#observations-and-learning)
 
 ## System Calls Implementation
 
@@ -557,30 +539,14 @@ Despite these challenges, UNIX standardization continues to be vital for ensurin
 System calls are the fundamental interface between applications and the operating system kernel. They allow user programs to request services from the operating system, such as file operations, process management, and network communications. In Unix-like systems like EndlessOS, system calls are the primary mechanism for applications to interact with hardware resources and maintain system security through controlled access.
 
 ```mermaid
-graph TD
-    A[User Application] -->|System Call Interface| B[Kernel Space]
-    A --> C[User Space]
-    B --> D[Hardware]
+graph LR
+    A[Parent Process: 3421] --> B[Child 1: 3422]
+    A --> C[Child 2: 3423]
+    A --> D[Child 3: 3424]
     
-    C --> E[Libraries]
-    E -->|Wrapper Functions| A
-    
-    B --> F[Process Management]
-    B --> G[Memory Management]
-    B --> H[File Systems]
-    B --> I[Network Stack]
-    B --> J[Device Drivers]
-    
-    style A fill:#1E1E1E,stroke:#FFF,stroke-width:1px,color:#FFF
-    style B fill:#2A4D69,stroke:#FFF,stroke-width:1px,color:#FFF
-    style C fill:#4B86B4,stroke:#FFF,stroke-width:1px,color:#FFF
-    style D fill:#1E1E1E,stroke:#FFF,stroke-width:1px,color:#FFF
-    style E fill:#4B86B4,stroke:#FFF,stroke-width:1px,color:#FFF
-    style F fill:#2A4D69,stroke:#FFF,stroke-width:1px,color:#FFF
-    style G fill:#2A4D69,stroke:#FFF,stroke-width:1px,color:#FFF
-    style H fill:#2A4D69,stroke:#FFF,stroke-width:1px,color:#FFF
-    style I fill:#2A4D69,stroke:#FFF,stroke-width:1px,color:#FFF
-    style J fill:#2A4D69,stroke:#FFF,stroke-width:1px,color:#FFF
+    B -.->|Same Group| E[PGID: 3422]
+    C -.->|Same Group| E
+    D -.->|Own Group| F[PGID: 3424]
 ```
 
 ### The setpgid() System Call
