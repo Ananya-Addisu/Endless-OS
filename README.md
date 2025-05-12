@@ -1,6 +1,6 @@
 # EndlessOS Documentation
 
-![EndlessOS Logo](images/logo.svg)
+![EndlessOS Logo](blob/main/logo.svg)
 
 This repository contains comprehensive documentation for EndlessOS, a Linux-based operating system designed with simplicity and accessibility in mind. The project explores the installation, features, and technical aspects of EndlessOS.
 
@@ -8,7 +8,6 @@ This repository contains comprehensive documentation for EndlessOS, a Linux-base
 
 <details>
 <summary><strong>Main Documentation</strong></summary>
-
 - [Introduction](#introduction)
 - [Objectives](#objectives)
 - [Requirements](#requirements)
@@ -21,21 +20,7 @@ This repository contains comprehensive documentation for EndlessOS, a Linux-base
 - [Virtualization](#virtualization)
 - [UNIX Standardization](#unix-standardization)
 
-</details>
-
-<details>
-<summary><strong>System Calls Implementation</strong></summary>
-
-- [Understanding System Calls](#understanding-system-calls)
-- [The setpgid() System Call](#the-setpgid-system-call)
-- [Implementation Process](#implementation-process)
-- [Program Output](#program-output)
-- [Observations and Learning](#observations-and-learning)
-
-</details>
-
-<details>
-<summary><strong>Main Documentation</strong></summary>
+</br></br></br>
 
 ## Introduction
 
@@ -140,42 +125,42 @@ sequenceDiagram
 ### Installation Screenshots
 
 #### VM Setup Process
-![VM Setup Step 1](images/vm1.png)
+![VM Setup Step 1](blob/main/images/vm1.png)
 *Creating the new virtual machine*
 
-![VM Setup Step 2](images/vm2.png)
+![VM Setup Step 2](blob/main/images/vm2.png)
 *Selecting the VM type*
 
-![VM Setup Step 3](images/vm3.png)
+![VM Setup Step 3](blob/main/images/vm3.png)
 *Configuring the VM settings*
 
-![VM Setup Step 4](images/vm4.png)
+![VM Setup Step 4](blob/main/images/vm4.png)
 *Allocating resources to the VM*
 
-![VM Setup Step 5](images/vm5.png)
+![VM Setup Step 5](blob/main/images/vm5.png)
 *Configuring storage options*
 
 #### EndlessOS Installation Process
-![Installation Step 1](images/install1.png)
+![Installation Step 1](blob/main/images/install1.png)
 *EndlessOS boot screen*
 
-![Installation Step 2](images/install2.png)
+![Installation Step 2](blob/main/images/install2.png)
 *Language selection*
 
-![Installation Step 3](images/install3.png)
+![Installation Step 3](blob/main/images/install3.png)
 *Disk partitioning options*
 
-![Installation Step 4](images/install4.png)
+![Installation Step 4](blob/main/images/install4.png)
 *User account creation*
 
 #### First Boot and Configuration
-![First Boot Step 1](images/config1.png)
+![First Boot Step 1](blob/main/images/config1.png)
 *First boot welcome screen*
 
-![First Boot Step 2](images/config2.png)
+![First Boot Step 2](blob/main/images/config2.png)
 *Desktop environment*
 
-![First Boot Step 3](images/config3.png)
+![First Boot Step 3](blob/main/images/config3.png)
 *System settings panel*
 
 ## Issues and Solutions
@@ -474,6 +459,17 @@ Despite these challenges, UNIX standardization continues to be vital for ensurin
 
 </details>
 
+<details>
+<summary><strong>System Calls Implementation</strong></summary>
+
+- [Understanding System Calls](#understanding-system-calls)
+- [The setpgid() System Call](#the-setpgid-system-call)
+- [Implementation Process](#implementation-process)
+- [Program Output](#program-output)
+- [Observations and Learning](#observations-and-learning)
+
+</br></br></br>
+
 ## System Calls Implementation
 
 ### Understanding System Calls
@@ -658,3 +654,4 @@ Through this implementation, several insights were gained:
 - The implementation of process groups in EndlessOS follows the POSIX standard, demonstrating the importance of UNIX standardization in providing consistent behavior across different operating systems.
 
 This hands-on experience with system calls reinforced understanding of the relationship between user applications and the operating system kernel, highlighting how low-level system functions can be leveraged to build more complex application behaviors.
+</details>
