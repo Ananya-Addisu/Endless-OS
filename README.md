@@ -1,6 +1,8 @@
-# EndlessOS Documentation
+<div style="align: center;">
 
 ![EndlessOS Logo](https://github.com/Ananya-Addisu/Endless-OS/blob/main/logo.svg)
+<h1>EndlessOS Documentation</h1>
+</div>
 
 This repository contains comprehensive documentation for EndlessOS, a Linux-based operating system designed with simplicity and accessibility in mind. The project explores the installation, features, and technical aspects of EndlessOS.
 
@@ -36,7 +38,6 @@ Additionally, EndlessOS's implementation of the OSTree system for managing updat
 ## System Architecture
 
 ```mermaid
-%%{init: {'theme': 'dark'}}%%
 flowchart TD
     A[EndlessOS] --> B[User Interface]
     A --> C[System Core]
@@ -103,7 +104,6 @@ flowchart TD
 The installation process began by setting up a new virtual machine in VMware Workstation 17 with appropriate specifications for EndlessOS.
 
 ```mermaid
-%%{init: {'theme': 'dark'}}%%
 sequenceDiagram
     participant User
     participant VMware
@@ -136,71 +136,83 @@ sequenceDiagram
 ### Installation Screenshots
 
 #### VM Setup Process
-![VM Setup Step 1](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/vm1.png)
-*Creating a new virtual machine in VMware Workstation*
+![VM Setup Step 1](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/1setup.png)
+*Creating the new virtual machine*
 
-![VM Setup Step 2](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/vm2.png)
-*Selecting "Typical" for VM configuration type*
+![VM Setup Step 2](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/2setup.png)
+*Selecting the VM type*
 
-![VM Setup Step 3](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/vm3.png)
-*Choosing the EndlessOS ISO as installation media*
+![VM Setup Step 3](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/3setup.png)
+*Configuring the VM settings*
 
-![VM Setup Step 4](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/vm4.png)
-*Setting up 8GB of RAM for optimal performance*
+![VM Setup Step 4](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/4setup.png)
+*Allocating resources to the VM*
 
-![VM Setup Step 5](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/vm5.png)
-*Allocating 25GB of storage space for the virtual disk*
+![VM Setup Step 5](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/5setup.png)
+*Configuring storage options*
+
+![VM Setup Step 6](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/6setup.png)
+*Finalizing VM configuration*
 
 #### EndlessOS Installation Process
 ![Installation Step 1](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/1boot.png)
-*EndlessOS live boot screen with installation option*
+*EndlessOS boot screen*
 
-![Installation Step 2](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/2language.png)
-*Selecting English as the system language*
+![Installation Step 2](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/2boot.png)
+*Language selection*
 
-![Installation Step 3](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/3keyboard.png)
-*Keyboard layout selection screen*
+![Installation Step 3](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/3boot.png)
+*Keyboard layout selection*
 
-![Installation Step 4](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/4timezone.png)
-*Setting the timezone for system clock*
+![Installation Step 4](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/4boot.png)
+*Setting the timezone*
 
-![Installation Step 5](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/5diskpartition.png)
-*Choosing the "Reformat" option for disk partitioning*
+![Installation Step 5](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/5boot.png)
+*Disk partitioning options*
 
-![Installation Step 6](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/6diskconfirm.png)
-*Confirming disk formatting and partitioning*
+![Installation Step 6](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/6boot.png)
+*Confirming disk formatting*
 
-![Installation Step 7](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/7useraccount.png)
-*Creating a user account with personal details*
+![Installation Step 7](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/7boot.png)
+*Creating user account*
 
-![Installation Step 8](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/8installing.png)
-*Installation progress screen showing file copy operation*
+![Installation Step 8](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/8boot.png)
+*Installation progress*
 
-![Installation Step 9](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/9finish.png)
-*Installation complete screen*
+![Installation Step 9](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/9boot.png)
+*Installation complete*
 
 #### First Boot and Configuration
 ![First Boot Step 1](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/10boot.png)
-*First boot welcome screen after installation*
+*First boot welcome screen*
 
-![First Boot Step 2](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/11desktop.png)
-*GNOME-based EndlessOS desktop environment*
+![First Boot Step 2](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/11boot.png)
+*Desktop environment*
 
-![First Boot Step 3](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/12settings.png)
-*System settings panel for configuration*
+![First Boot Step 3](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/12boot.png)
+*System settings panel*
 
-![First Boot Step 4](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/13applications.png)
+![First Boot Step 4](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/13boot.png)
 *Application launcher showing preinstalled apps*
 
+![First Boot Step 5](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/14boot.png)
+*File manager and system navigation*
+
+![First Boot Step 6](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/15boot.png)
+*System information and hardware details*
+
+![First Boot Step 7](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/16boot.png)
+*Software update center*
+
+![First Boot Step 8](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/17boot.png)
+*Terminal access and command line interface*
+
 #### Issues and Troubleshooting
-![Error Screenshot 1](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/error1.png)
+![Error Screenshot 1](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/1error.png)
 *Display resolution error before installing guest additions*
 
-![Error Screenshot 2](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/error2.png)
+![Error Screenshot 2](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/2error.png)
 *Network connectivity issue with NAT configuration*
-
-![Error Screenshot 3](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/error3.png)
-*OSTree update error related to system time*
 
 #### Solutions Implementation
 ![Solution Screenshot 1](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/solution1.png)
@@ -255,7 +267,6 @@ EndlessOS primarily uses the **ext4** filesystem for its main partition. This ch
 - **Large File Support:** It can handle files up to 16TB and volumes up to 1EB, which is more than adequate for typical use cases.
 
 ```mermaid
-%%{init: {'theme': 'dark'}}%%
 graph TD
     subgraph "EndlessOS Filesystem Structure"
         A[Root Filesystem] --> B[/]
@@ -313,7 +324,6 @@ The OSTree system used by EndlessOS for managing the system image also has speci
 - **Limited Package Management:** Traditional apt/dpkg commands don't work as expected since the system uses OSTree and Flatpak.
 
 ```mermaid
-%%{init: {'theme': 'dark'}}%%
 pie title "EndlessOS Use Case Suitability"
     "Educational Environments" : 40
     "Regions with Limited Internet" : 30
@@ -362,7 +372,6 @@ Based on experience with EndlessOS, the following improvements and changes are r
 - **Enterprise Features:** Adding features for centralized management would make EndlessOS more viable for educational institutions and businesses.
 
 ```mermaid
-%%{init: {'theme': 'dark'}}%%
 gantt
     title EndlessOS Future Development Roadmap (Projected)
     dateFormat  YYYY-MM-DD
@@ -395,7 +404,6 @@ Virtualization has become a cornerstone of modern computing for several importan
 - **Cost Reduction:** By consolidating multiple systems onto fewer physical machines, organizations can significantly reduce hardware, energy, and maintenance costs.
 
 ```mermaid
-%%{init: {'theme': 'dark'}}%%
 graph LR
     A[Physical Host] --> B[Hypervisor]
     B --> C[Virtual Machine 1<br>EndlessOS]
@@ -453,7 +461,6 @@ Virtualization has fundamentally transformed modern computing, enabling cloud co
 UNIX standardization is crucial for ensuring compatibility and portability across different UNIX and UNIX-like operating systems. Standardization efforts have led to a common base of functionality that applications can rely on, regardless of the specific UNIX implementation they're running on. This has been vital for the growth of the UNIX ecosystem and the development of portable applications.
 
 ```mermaid
-%%{init: {'theme': 'dark'}}%%
 timeline
     title Evolution of UNIX Standards
     section 1980s
@@ -550,7 +557,6 @@ Despite these challenges, UNIX standardization continues to be vital for ensurin
 System calls are the fundamental interface between applications and the operating system kernel. They allow user programs to request services from the operating system, such as file operations, process management, and network communications. In Unix-like systems like EndlessOS, system calls are the primary mechanism for applications to interact with hardware resources and maintain system security through controlled access.
 
 ```mermaid
-%%{init: {'theme': 'dark'}}%%
 graph TD
     A[User Application] -->|System Call Interface| B[Kernel Space]
     A --> C[User Space]
@@ -706,7 +712,6 @@ All child processes have completed.
 ```
 
 ```mermaid
-%%{init: {'theme': 'dark'}}%%
 graph LR
     A[Parent Process<br>PID: 3421<br>PGID: 3421] --> B[Child 1<br>PID: 3422<br>PGID: 3422]
     A --> C[Child 2<br>PID: 3423<br>PGID: 3422]
