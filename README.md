@@ -1,6 +1,6 @@
 # EndlessOS Documentation
 
-![EndlessOS Logo](../logo.svg)
+![EndlessOS Logo](https://github.com/Ananya-Addisu/Endless-OS/blob/main/logo.svg)
 
 This repository contains comprehensive documentation for EndlessOS, a Linux-based operating system designed with simplicity and accessibility in mind. The project explores the installation, features, and technical aspects of EndlessOS.
 
@@ -36,6 +36,7 @@ Additionally, EndlessOS's implementation of the OSTree system for managing updat
 ## System Architecture
 
 ```mermaid
+%%{init: {'theme': 'dark'}}%%
 flowchart TD
     A[EndlessOS] --> B[User Interface]
     A --> C[System Core]
@@ -52,18 +53,18 @@ flowchart TD
     D --> D2[Flatpak Applications]
     D --> D3[Educational Content]
     
-    style A fill:#2A4D69,stroke:#333,stroke-width:2px,color:#ffffff
-    style B fill:#4B86B4,stroke:#333,stroke-width:1px,color:#ffffff
-    style C fill:#4B86B4,stroke:#333,stroke-width:1px,color:#ffffff
-    style D fill:#4B86B4,stroke:#333,stroke-width:1px,color:#ffffff
-    style B1 fill:#2A4D69,stroke:#333,stroke-width:1px,color:#ffffff
-    style B2 fill:#2A4D69,stroke:#333,stroke-width:1px,color:#ffffff
-    style C1 fill:#2A4D69,stroke:#333,stroke-width:1px,color:#ffffff
-    style C2 fill:#2A4D69,stroke:#333,stroke-width:1px,color:#ffffff
-    style C3 fill:#2A4D69,stroke:#333,stroke-width:1px,color:#ffffff
-    style D1 fill:#2A4D69,stroke:#333,stroke-width:1px,color:#ffffff
-    style D2 fill:#2A4D69,stroke:#333,stroke-width:1px,color:#ffffff
-    style D3 fill:#2A4D69,stroke:#333,stroke-width:1px,color:#ffffff
+    style A fill:#1E1E1E,stroke:#FFF,stroke-width:2px,color:#FFF
+    style B fill:#2A4D69,stroke:#FFF,stroke-width:1px,color:#FFF
+    style C fill:#2A4D69,stroke:#FFF,stroke-width:1px,color:#FFF
+    style D fill:#2A4D69,stroke:#FFF,stroke-width:1px,color:#FFF
+    style B1 fill:#4B86B4,stroke:#FFF,stroke-width:1px,color:#FFF
+    style B2 fill:#4B86B4,stroke:#FFF,stroke-width:1px,color:#FFF
+    style C1 fill:#4B86B4,stroke:#FFF,stroke-width:1px,color:#FFF
+    style C2 fill:#4B86B4,stroke:#FFF,stroke-width:1px,color:#FFF
+    style C3 fill:#4B86B4,stroke:#FFF,stroke-width:1px,color:#FFF
+    style D1 fill:#4B86B4,stroke:#FFF,stroke-width:1px,color:#FFF
+    style D2 fill:#4B86B4,stroke:#FFF,stroke-width:1px,color:#FFF
+    style D3 fill:#4B86B4,stroke:#FFF,stroke-width:1px,color:#FFF
 ```
 
 ## Objectives
@@ -102,6 +103,7 @@ flowchart TD
 The installation process began by setting up a new virtual machine in VMware Workstation 17 with appropriate specifications for EndlessOS.
 
 ```mermaid
+%%{init: {'theme': 'dark'}}%%
 sequenceDiagram
     participant User
     participant VMware
@@ -119,10 +121,6 @@ sequenceDiagram
     User->>EndlessOS: Create user account
     EndlessOS->>VMware: Complete installation
     EndlessOS->>User: Reboot into new system
-    
-    style User fill:#2A4D69,color:#ffffff
-    style VMware fill:#4B86B4,color:#ffffff
-    style EndlessOS fill:#2A4D69,color:#ffffff
 ```
 
 ### Installation Process Steps
@@ -138,43 +136,84 @@ sequenceDiagram
 ### Installation Screenshots
 
 #### VM Setup Process
-![VM Setup Step 1](../images/vm1.png)
-*Creating the new virtual machine*
+![VM Setup Step 1](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/vm1.png)
+*Creating a new virtual machine in VMware Workstation*
 
-![VM Setup Step 2](../images/vm2.png)
-*Selecting the VM type*
+![VM Setup Step 2](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/vm2.png)
+*Selecting "Typical" for VM configuration type*
 
-![VM Setup Step 3](../images/vm3.png)
-*Configuring the VM settings*
+![VM Setup Step 3](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/vm3.png)
+*Choosing the EndlessOS ISO as installation media*
 
-![VM Setup Step 4](../images/vm4.png)
-*Allocating resources to the VM*
+![VM Setup Step 4](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/vm4.png)
+*Setting up 8GB of RAM for optimal performance*
 
-![VM Setup Step 5](../images/vm5.png)
-*Configuring storage options*
+![VM Setup Step 5](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/vm5.png)
+*Allocating 25GB of storage space for the virtual disk*
 
 #### EndlessOS Installation Process
-![Installation Step 1](../images/install1.png)
-*EndlessOS boot screen*
+![Installation Step 1](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/1boot.png)
+*EndlessOS live boot screen with installation option*
 
-![Installation Step 2](../images/install2.png)
-*Language selection*
+![Installation Step 2](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/2language.png)
+*Selecting English as the system language*
 
-![Installation Step 3](../images/install3.png)
-*Disk partitioning options*
+![Installation Step 3](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/3keyboard.png)
+*Keyboard layout selection screen*
 
-![Installation Step 4](../images/install4.png)
-*User account creation*
+![Installation Step 4](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/4timezone.png)
+*Setting the timezone for system clock*
+
+![Installation Step 5](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/5diskpartition.png)
+*Choosing the "Reformat" option for disk partitioning*
+
+![Installation Step 6](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/6diskconfirm.png)
+*Confirming disk formatting and partitioning*
+
+![Installation Step 7](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/7useraccount.png)
+*Creating a user account with personal details*
+
+![Installation Step 8](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/8installing.png)
+*Installation progress screen showing file copy operation*
+
+![Installation Step 9](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/9finish.png)
+*Installation complete screen*
 
 #### First Boot and Configuration
-![First Boot Step 1](../images/config1.png)
-*First boot welcome screen*
+![First Boot Step 1](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/10boot.png)
+*First boot welcome screen after installation*
 
-![First Boot Step 2](../images/config2.png)
-*Desktop environment*
+![First Boot Step 2](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/11desktop.png)
+*GNOME-based EndlessOS desktop environment*
 
-![First Boot Step 3](../images/config3.png)
-*System settings panel*
+![First Boot Step 3](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/12settings.png)
+*System settings panel for configuration*
+
+![First Boot Step 4](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/13applications.png)
+*Application launcher showing preinstalled apps*
+
+#### Issues and Troubleshooting
+![Error Screenshot 1](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/error1.png)
+*Display resolution error before installing guest additions*
+
+![Error Screenshot 2](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/error2.png)
+*Network connectivity issue with NAT configuration*
+
+![Error Screenshot 3](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/error3.png)
+*OSTree update error related to system time*
+
+#### Solutions Implementation
+![Solution Screenshot 1](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/solution1.png)
+*Installing development packages for guest additions*
+
+![Solution Screenshot 2](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/solution2.png)
+*Changing network adapter to bridged mode*
+
+![Solution Screenshot 3](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/solution3.png)
+*Synchronizing system time to fix OSTree updates*
+
+![Solution Screenshot 4](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/solution4.png)
+*Successful update after implementing solutions*
 
 ## Issues and Solutions
 
@@ -216,6 +255,7 @@ EndlessOS primarily uses the **ext4** filesystem for its main partition. This ch
 - **Large File Support:** It can handle files up to 16TB and volumes up to 1EB, which is more than adequate for typical use cases.
 
 ```mermaid
+%%{init: {'theme': 'dark'}}%%
 graph TD
     subgraph "EndlessOS Filesystem Structure"
         A[Root Filesystem] --> B[/]
@@ -228,15 +268,15 @@ graph TD
         F --> I[Applications]
     end
     
-    style A fill:#2A4D69,stroke:#333,stroke-width:1px,color:#ffffff
-    style B fill:#4B86B4,stroke:#333,stroke-width:1px,color:#ffffff
-    style C fill:#2A4D69,stroke:#333,stroke-width:1px,color:#ffffff
-    style D fill:#2A4D69,stroke:#333,stroke-width:1px,color:#ffffff
-    style E fill:#2A4D69,stroke:#333,stroke-width:1px,color:#ffffff
-    style F fill:#2A4D69,stroke:#333,stroke-width:1px,color:#ffffff
-    style G fill:#4B86B4,stroke:#333,stroke-width:1px,color:#ffffff
-    style H fill:#4B86B4,stroke:#333,stroke-width:1px,color:#ffffff
-    style I fill:#4B86B4,stroke:#333,stroke-width:1px,color:#ffffff
+    style A fill:#1E1E1E,stroke:#FFF,stroke-width:1px,color:#FFF
+    style B fill:#2A4D69,stroke:#FFF,stroke-width:1px,color:#FFF
+    style C fill:#4B86B4,stroke:#FFF,stroke-width:1px,color:#FFF
+    style D fill:#4B86B4,stroke:#FFF,stroke-width:1px,color:#FFF
+    style E fill:#4B86B4,stroke:#FFF,stroke-width:1px,color:#FFF
+    style F fill:#4B86B4,stroke:#FFF,stroke-width:1px,color:#FFF
+    style G fill:#2A4D69,stroke:#FFF,stroke-width:1px,color:#FFF
+    style H fill:#2A4D69,stroke:#FFF,stroke-width:1px,color:#FFF
+    style I fill:#2A4D69,stroke:#FFF,stroke-width:1px,color:#FFF
 ```
 
 ### Other Supported Filesystems
@@ -273,6 +313,7 @@ The OSTree system used by EndlessOS for managing the system image also has speci
 - **Limited Package Management:** Traditional apt/dpkg commands don't work as expected since the system uses OSTree and Flatpak.
 
 ```mermaid
+%%{init: {'theme': 'dark'}}%%
 pie title "EndlessOS Use Case Suitability"
     "Educational Environments" : 40
     "Regions with Limited Internet" : 30
@@ -321,6 +362,7 @@ Based on experience with EndlessOS, the following improvements and changes are r
 - **Enterprise Features:** Adding features for centralized management would make EndlessOS more viable for educational institutions and businesses.
 
 ```mermaid
+%%{init: {'theme': 'dark'}}%%
 gantt
     title EndlessOS Future Development Roadmap (Projected)
     dateFormat  YYYY-MM-DD
@@ -353,6 +395,7 @@ Virtualization has become a cornerstone of modern computing for several importan
 - **Cost Reduction:** By consolidating multiple systems onto fewer physical machines, organizations can significantly reduce hardware, energy, and maintenance costs.
 
 ```mermaid
+%%{init: {'theme': 'dark'}}%%
 graph LR
     A[Physical Host] --> B[Hypervisor]
     B --> C[Virtual Machine 1<br>EndlessOS]
@@ -364,15 +407,15 @@ graph LR
     C --> H[vDisk]
     C --> I[vNetwork]
     
-    style A fill:#2A4D69,stroke:#333,stroke-width:2px,color:#ffffff
-    style B fill:#4B86B4,stroke:#333,stroke-width:2px,color:#ffffff
-    style C fill:#2A4D69,stroke:#333,stroke-width:2px,color:#ffffff
-    style D fill:#4B86B4,stroke:#333,stroke-width:2px,color:#ffffff
-    style E fill:#2A4D69,stroke:#333,stroke-width:2px,color:#ffffff
-    style F fill:#4B86B4,stroke:#333,stroke-width:1px,color:#ffffff
-    style G fill:#4B86B4,stroke:#333,stroke-width:1px,color:#ffffff
-    style H fill:#4B86B4,stroke:#333,stroke-width:1px,color:#ffffff
-    style I fill:#4B86B4,stroke:#333,stroke-width:1px,color:#ffffff
+    style A fill:#1E1E1E,stroke:#FFF,stroke-width:2px,color:#FFF
+    style B fill:#2A4D69,stroke:#FFF,stroke-width:2px,color:#FFF
+    style C fill:#4B86B4,stroke:#FFF,stroke-width:2px,color:#FFF
+    style D fill:#4B86B4,stroke:#FFF,stroke-width:2px,color:#FFF
+    style E fill:#4B86B4,stroke:#FFF,stroke-width:2px,color:#FFF
+    style F fill:#2A4D69,stroke:#FFF,stroke-width:1px,color:#FFF
+    style G fill:#2A4D69,stroke:#FFF,stroke-width:1px,color:#FFF
+    style H fill:#2A4D69,stroke:#FFF,stroke-width:1px,color:#FFF
+    style I fill:#2A4D69,stroke:#FFF,stroke-width:1px,color:#FFF
 ```
 
 ### How Virtualization Works
@@ -413,17 +456,21 @@ UNIX standardization is crucial for ensuring compatibility and portability acros
 %%{init: {'theme': 'dark'}}%%
 timeline
     title Evolution of UNIX Standards
-    1980s : AT&T's SVID
-          : First POSIX efforts
-    1990s : X/Open's XPG
-          : Creation of Single UNIX Specification
-    1996 : The Open Group formed
-    1998 : UNIX 98 specification released
-    2001 : POSIX:2001 created
-    2003 : UNIX 03 specification released
-    2008 : POSIX:2008 published
-    2010s : Continued evolution
-          : Modern computing focus
+    section 1980s
+      AT&T's SVID : 1983
+      First POSIX efforts : 1988
+    section 1990s
+      X/Open's XPG : 1992
+      Single UNIX Specification : 1995
+    section 2000s
+      The Open Group formed : 1996
+      UNIX 98 released : 1998
+      POSIX:2001 created : 2001
+      UNIX 03 released : 2003
+      POSIX:2008 published : 2008
+    section 2010s
+      Continued evolution : 2010
+      Modern computing focus : 2015
 ```
 
 ### Key Organizations in UNIX Standardization
@@ -503,6 +550,7 @@ Despite these challenges, UNIX standardization continues to be vital for ensurin
 System calls are the fundamental interface between applications and the operating system kernel. They allow user programs to request services from the operating system, such as file operations, process management, and network communications. In Unix-like systems like EndlessOS, system calls are the primary mechanism for applications to interact with hardware resources and maintain system security through controlled access.
 
 ```mermaid
+%%{init: {'theme': 'dark'}}%%
 graph TD
     A[User Application] -->|System Call Interface| B[Kernel Space]
     A --> C[User Space]
@@ -517,10 +565,16 @@ graph TD
     B --> I[Network Stack]
     B --> J[Device Drivers]
     
-    style A fill:#2A4D69,stroke:#333,stroke-width:1px,color:#ffffff
-    style B fill:#4B86B4,stroke:#333,stroke-width:1px,color:#ffffff
-    style C fill:#2A4D69,stroke:#333,stroke-width:1px,color:#ffffff
-    style D fill:#4B86B4,stroke:#333,stroke-width:1px,color:#ffffff
+    style A fill:#1E1E1E,stroke:#FFF,stroke-width:1px,color:#FFF
+    style B fill:#2A4D69,stroke:#FFF,stroke-width:1px,color:#FFF
+    style C fill:#4B86B4,stroke:#FFF,stroke-width:1px,color:#FFF
+    style D fill:#1E1E1E,stroke:#FFF,stroke-width:1px,color:#FFF
+    style E fill:#4B86B4,stroke:#FFF,stroke-width:1px,color:#FFF
+    style F fill:#2A4D69,stroke:#FFF,stroke-width:1px,color:#FFF
+    style G fill:#2A4D69,stroke:#FFF,stroke-width:1px,color:#FFF
+    style H fill:#2A4D69,stroke:#FFF,stroke-width:1px,color:#FFF
+    style I fill:#2A4D69,stroke:#FFF,stroke-width:1px,color:#FFF
+    style J fill:#2A4D69,stroke:#FFF,stroke-width:1px,color:#FFF
 ```
 
 ### The setpgid() System Call
@@ -652,6 +706,7 @@ All child processes have completed.
 ```
 
 ```mermaid
+%%{init: {'theme': 'dark'}}%%
 graph LR
     A[Parent Process<br>PID: 3421<br>PGID: 3421] --> B[Child 1<br>PID: 3422<br>PGID: 3422]
     A --> C[Child 2<br>PID: 3423<br>PGID: 3422]
@@ -661,12 +716,12 @@ graph LR
     C -.-> E
     D -.-> F[Process Group<br>PGID: 3424]
     
-    style A fill:#2A4D69,stroke:#333,stroke-width:2px,color:#ffffff
-    style B fill:#4B86B4,stroke:#333,stroke-width:1px,color:#ffffff
-    style C fill:#4B86B4,stroke:#333,stroke-width:1px,color:#ffffff
-    style D fill:#2A4D69,stroke:#333,stroke-width:1px,color:#ffffff
-    style E fill:#4B86B4,stroke:#333,stroke-width:1px,color:#ffffff,stroke-dasharray: 5 5
-    style F fill:#2A4D69,stroke:#333,stroke-width:1px,color:#ffffff,stroke-dasharray: 5 5
+    style A fill:#1E1E1E,stroke:#FFF,stroke-width:2px,color:#FFF
+    style B fill:#2A4D69,stroke:#FFF,stroke-width:1px,color:#FFF
+    style C fill:#2A4D69,stroke:#FFF,stroke-width:1px,color:#FFF
+    style D fill:#4B86B4,stroke:#FFF,stroke-width:1px,color:#FFF
+    style E fill:#2A4D69,stroke:#FFF,stroke-width:1px,color:#FFF,stroke-dasharray: 5 5
+    style F fill:#4B86B4,stroke:#FFF,stroke-width:1px,color:#FFF,stroke-dasharray: 5 5
 ```
 
 ### Observations and Learning
