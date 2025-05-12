@@ -1,4 +1,5 @@
 <div align= "center">
+    
 ![EndlessOS Logo](https://github.com/Ananya-Addisu/Endless-OS/blob/main/logo.svg)
 <h1>EndlessOS</h1>
 </div>
