@@ -1,7 +1,7 @@
-# EndlessOS Documentation
-
-![EndlessOS Logo](../images/logo.svg)
-
+<div align= "center">
+![EndlessOS Logo](https://github.com/Ananya-Addisu/Endless-OS/blob/main/logo.svg)
+<h1>EndlessOS</h1>
+</div>
 This repository contains comprehensive documentation for EndlessOS, a Linux-based operating system designed with simplicity and accessibility in mind. The project explores the installation, features, and technical aspects of EndlessOS.
 
 ## Table of Contents
