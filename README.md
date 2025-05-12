@@ -1,6 +1,6 @@
 # EndlessOS Documentation
 
-![EndlessOS Logo](blob/main/logo.svg)
+![EndlessOS Logo](../logo.svg)
 
 This repository contains comprehensive documentation for EndlessOS, a Linux-based operating system designed with simplicity and accessibility in mind. The project explores the installation, features, and technical aspects of EndlessOS.
 
@@ -8,6 +8,7 @@ This repository contains comprehensive documentation for EndlessOS, a Linux-base
 
 <details>
 <summary><strong>Main Documentation</strong></summary>
+
 - [Introduction](#introduction)
 - [Objectives](#objectives)
 - [Requirements](#requirements)
@@ -19,8 +20,6 @@ This repository contains comprehensive documentation for EndlessOS, a Linux-base
 - [Future Outlook](#future-outlook)
 - [Virtualization](#virtualization)
 - [UNIX Standardization](#unix-standardization)
-
-</br></br></br>
 
 ## Introduction
 
@@ -53,8 +52,18 @@ flowchart TD
     D --> D2[Flatpak Applications]
     D --> D3[Educational Content]
     
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style C2 fill:#bbf,stroke:#333,stroke-width:1px
+    style A fill:#2A4D69,stroke:#333,stroke-width:2px,color:#ffffff
+    style B fill:#4B86B4,stroke:#333,stroke-width:1px,color:#ffffff
+    style C fill:#4B86B4,stroke:#333,stroke-width:1px,color:#ffffff
+    style D fill:#4B86B4,stroke:#333,stroke-width:1px,color:#ffffff
+    style B1 fill:#2A4D69,stroke:#333,stroke-width:1px,color:#ffffff
+    style B2 fill:#2A4D69,stroke:#333,stroke-width:1px,color:#ffffff
+    style C1 fill:#2A4D69,stroke:#333,stroke-width:1px,color:#ffffff
+    style C2 fill:#2A4D69,stroke:#333,stroke-width:1px,color:#ffffff
+    style C3 fill:#2A4D69,stroke:#333,stroke-width:1px,color:#ffffff
+    style D1 fill:#2A4D69,stroke:#333,stroke-width:1px,color:#ffffff
+    style D2 fill:#2A4D69,stroke:#333,stroke-width:1px,color:#ffffff
+    style D3 fill:#2A4D69,stroke:#333,stroke-width:1px,color:#ffffff
 ```
 
 ## Objectives
@@ -110,6 +119,10 @@ sequenceDiagram
     User->>EndlessOS: Create user account
     EndlessOS->>VMware: Complete installation
     EndlessOS->>User: Reboot into new system
+    
+    style User fill:#2A4D69,color:#ffffff
+    style VMware fill:#4B86B4,color:#ffffff
+    style EndlessOS fill:#2A4D69,color:#ffffff
 ```
 
 ### Installation Process Steps
@@ -125,42 +138,42 @@ sequenceDiagram
 ### Installation Screenshots
 
 #### VM Setup Process
-![VM Setup Step 1](blob/main/images/vm1.png)
+![VM Setup Step 1](../images/vm1.png)
 *Creating the new virtual machine*
 
-![VM Setup Step 2](blob/main/images/vm2.png)
+![VM Setup Step 2](../images/vm2.png)
 *Selecting the VM type*
 
-![VM Setup Step 3](blob/main/images/vm3.png)
+![VM Setup Step 3](../images/vm3.png)
 *Configuring the VM settings*
 
-![VM Setup Step 4](blob/main/images/vm4.png)
+![VM Setup Step 4](../images/vm4.png)
 *Allocating resources to the VM*
 
-![VM Setup Step 5](blob/main/images/vm5.png)
+![VM Setup Step 5](../images/vm5.png)
 *Configuring storage options*
 
 #### EndlessOS Installation Process
-![Installation Step 1](blob/main/images/install1.png)
+![Installation Step 1](../images/install1.png)
 *EndlessOS boot screen*
 
-![Installation Step 2](blob/main/images/install2.png)
+![Installation Step 2](../images/install2.png)
 *Language selection*
 
-![Installation Step 3](blob/main/images/install3.png)
+![Installation Step 3](../images/install3.png)
 *Disk partitioning options*
 
-![Installation Step 4](blob/main/images/install4.png)
+![Installation Step 4](../images/install4.png)
 *User account creation*
 
 #### First Boot and Configuration
-![First Boot Step 1](blob/main/images/config1.png)
+![First Boot Step 1](../images/config1.png)
 *First boot welcome screen*
 
-![First Boot Step 2](blob/main/images/config2.png)
+![First Boot Step 2](../images/config2.png)
 *Desktop environment*
 
-![First Boot Step 3](blob/main/images/config3.png)
+![First Boot Step 3](../images/config3.png)
 *System settings panel*
 
 ## Issues and Solutions
@@ -214,6 +227,16 @@ graph TD
         F --> H[Read-only system image]
         F --> I[Applications]
     end
+    
+    style A fill:#2A4D69,stroke:#333,stroke-width:1px,color:#ffffff
+    style B fill:#4B86B4,stroke:#333,stroke-width:1px,color:#ffffff
+    style C fill:#2A4D69,stroke:#333,stroke-width:1px,color:#ffffff
+    style D fill:#2A4D69,stroke:#333,stroke-width:1px,color:#ffffff
+    style E fill:#2A4D69,stroke:#333,stroke-width:1px,color:#ffffff
+    style F fill:#2A4D69,stroke:#333,stroke-width:1px,color:#ffffff
+    style G fill:#4B86B4,stroke:#333,stroke-width:1px,color:#ffffff
+    style H fill:#4B86B4,stroke:#333,stroke-width:1px,color:#ffffff
+    style I fill:#4B86B4,stroke:#333,stroke-width:1px,color:#ffffff
 ```
 
 ### Other Supported Filesystems
@@ -341,11 +364,15 @@ graph LR
     C --> H[vDisk]
     C --> I[vNetwork]
     
-    style A fill:#f5f5f5,stroke:#333,stroke-width:2px
-    style B fill:#dff0d8,stroke:#333,stroke-width:2px
-    style C fill:#d9edf7,stroke:#333,stroke-width:2px
-    style D fill:#fcf8e3,stroke:#333,stroke-width:2px
-    style E fill:#f2dede,stroke:#333,stroke-width:2px
+    style A fill:#2A4D69,stroke:#333,stroke-width:2px,color:#ffffff
+    style B fill:#4B86B4,stroke:#333,stroke-width:2px,color:#ffffff
+    style C fill:#2A4D69,stroke:#333,stroke-width:2px,color:#ffffff
+    style D fill:#4B86B4,stroke:#333,stroke-width:2px,color:#ffffff
+    style E fill:#2A4D69,stroke:#333,stroke-width:2px,color:#ffffff
+    style F fill:#4B86B4,stroke:#333,stroke-width:1px,color:#ffffff
+    style G fill:#4B86B4,stroke:#333,stroke-width:1px,color:#ffffff
+    style H fill:#4B86B4,stroke:#333,stroke-width:1px,color:#ffffff
+    style I fill:#4B86B4,stroke:#333,stroke-width:1px,color:#ffffff
 ```
 
 ### How Virtualization Works
@@ -383,19 +410,20 @@ Virtualization has fundamentally transformed modern computing, enabling cloud co
 UNIX standardization is crucial for ensuring compatibility and portability across different UNIX and UNIX-like operating systems. Standardization efforts have led to a common base of functionality that applications can rely on, regardless of the specific UNIX implementation they're running on. This has been vital for the growth of the UNIX ecosystem and the development of portable applications.
 
 ```mermaid
+%%{init: {'theme': 'dark'}}%%
 timeline
     title Evolution of UNIX Standards
     1980s : AT&T's SVID
-           First POSIX efforts
+          : First POSIX efforts
     1990s : X/Open's XPG
-           Creation of Single UNIX Specification
+          : Creation of Single UNIX Specification
     1996 : The Open Group formed
     1998 : UNIX 98 specification released
     2001 : POSIX:2001 created
     2003 : UNIX 03 specification released
     2008 : POSIX:2008 published
-    2010s+ : Continued evolution
-             Modern computing focus
+    2010s : Continued evolution
+          : Modern computing focus
 ```
 
 ### Key Organizations in UNIX Standardization
@@ -456,7 +484,7 @@ UNIX vendors face several challenges in adhering to standardization:
 - **Evolving computing landscape:** Adapting standards to cloud, containers, and modern development practices
 
 Despite these challenges, UNIX standardization continues to be vital for ensuring application portability and system interoperability in today's diverse computing environment.
-
+<hr>
 </details>
 
 <details>
@@ -467,8 +495,6 @@ Despite these challenges, UNIX standardization continues to be vital for ensurin
 - [Implementation Process](#implementation-process)
 - [Program Output](#program-output)
 - [Observations and Learning](#observations-and-learning)
-
-</br></br></br>
 
 ## System Calls Implementation
 
@@ -491,10 +517,10 @@ graph TD
     B --> I[Network Stack]
     B --> J[Device Drivers]
     
-    style A fill:#d9edf7,stroke:#333,stroke-width:1px
-    style B fill:#dff0d8,stroke:#333,stroke-width:1px
-    style C fill:#d9edf7,stroke:#333,stroke-width:1px
-    style D fill:#f5f5f5,stroke:#333,stroke-width:1px
+    style A fill:#2A4D69,stroke:#333,stroke-width:1px,color:#ffffff
+    style B fill:#4B86B4,stroke:#333,stroke-width:1px,color:#ffffff
+    style C fill:#2A4D69,stroke:#333,stroke-width:1px,color:#ffffff
+    style D fill:#4B86B4,stroke:#333,stroke-width:1px,color:#ffffff
 ```
 
 ### The setpgid() System Call
@@ -635,12 +661,12 @@ graph LR
     C -.-> E
     D -.-> F[Process Group<br>PGID: 3424]
     
-    style A fill:#f5f5f5,stroke:#333,stroke-width:2px
-    style B fill:#dff0d8,stroke:#333,stroke-width:1px
-    style C fill:#dff0d8,stroke:#333,stroke-width:1px
-    style D fill:#fcf8e3,stroke:#333,stroke-width:1px
-    style E fill:#d9edf7,stroke:#333,stroke-width:1px,stroke-dasharray: 5 5
-    style F fill:#d9edf7,stroke:#333,stroke-width:1px,stroke-dasharray: 5 5
+    style A fill:#2A4D69,stroke:#333,stroke-width:2px,color:#ffffff
+    style B fill:#4B86B4,stroke:#333,stroke-width:1px,color:#ffffff
+    style C fill:#4B86B4,stroke:#333,stroke-width:1px,color:#ffffff
+    style D fill:#2A4D69,stroke:#333,stroke-width:1px,color:#ffffff
+    style E fill:#4B86B4,stroke:#333,stroke-width:1px,color:#ffffff,stroke-dasharray: 5 5
+    style F fill:#2A4D69,stroke:#333,stroke-width:1px,color:#ffffff,stroke-dasharray: 5 5
 ```
 
 ### Observations and Learning
