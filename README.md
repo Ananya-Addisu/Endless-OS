@@ -1,7 +1,6 @@
 <div align= "center">
-    
-![EndlessOS Logo](https://github.com/Ananya-Addisu/Endless-OS/blob/main/logo.svg)
 <h1>EndlessOS</h1>
+<img src="https://github.com/Ananya-Addisu/Endless-OS/blob/main/logo.svg" alt="EndlessOS Logo">
 </div>
 This repository contains comprehensive documentation for EndlessOS, a Linux-based operating system designed with simplicity and accessibility in mind. The project explores the installation, features, and technical aspects of EndlessOS.
 
@@ -139,82 +138,82 @@ sequenceDiagram
 
 #### VM Setup Process
 ![VM Setup Step 1](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/1setup.png)
-*Creating the new virtual machine*
+*Creating a new virtual machine in VirtualBox*
 
 ![VM Setup Step 2](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/2setup.png)
-*Selecting the VM type*
+*Loading The ISO*
 
 ![VM Setup Step 3](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/3setup.png)
-*Configuring the VM settings*
+*Selecting The Linux Version*
 
 ![VM Setup Step 4](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/4setup.png)
-*Allocating resources to the VM*
+*Setting VM name*
 
 ![VM Setup Step 5](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/5setup.png)
-*Configuring storage options*
+*Modifying allocated hard disk size*
 
 ![VM Setup Step 6](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/6setup.png)
-*Finalizing VM configuration*
+*Powering on the VM*
 
 #### EndlessOS Installation Process
 ![Installation Step 1](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/1boot.png)
-*EndlessOS boot screen*
+*VM Ware boot screen*
 
 ![Installation Step 2](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/2boot.png)
-*Language selection*
+*EndlessOS Boot Screen*
 
 ![Installation Step 3](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/3boot.png)
-*Keyboard layout selection*
+*Welcome to EndlessOS*
 
 ![Installation Step 4](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/4boot.png)
-*Setting the timezone*
+*Try or Reformat*
 
 ![Installation Step 5](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/5boot.png)
-*Disk partitioning options*
+*Reformating the disk*
 
 ![Installation Step 6](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/6boot.png)
-*Confirming disk formatting*
+*Reformating the disk*
 
 ![Installation Step 7](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/7boot.png)
-*Creating user account*
+*Reformating the disk*
 
 ![Installation Step 8](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/8boot.png)
-*Installation progress*
+*Reformating Done*
 
 ![Installation Step 9](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/9boot.png)
-*Installation complete*
+*EndlessOS Booting*
 
 #### First Boot and Configuration
 ![First Boot Step 1](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/10boot.png)
-*First boot welcome screen*
+*Keyboard Settings*
 
 ![First Boot Step 2](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/11boot.png)
-*Desktop environment*
+*Time and Date Settings*
 
 ![First Boot Step 3](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/12boot.png)
-*System settings panel*
+*Account Creation*
 
 ![First Boot Step 4](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/13boot.png)
-*Application launcher showing preinstalled apps*
+*Setting a Password*
 
 ![First Boot Step 5](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/14boot.png)
-*File manager and system navigation*
+*Setup Complete*
 
 ![First Boot Step 6](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/15boot.png)
-*System information and hardware details*
+*EndlessOS Desktop*
 
 ![First Boot Step 7](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/16boot.png)
-*Software update center*
+*EndlessOS Terminal*
 
 ![First Boot Step 8](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/17boot.png)
-*Terminal access and command line interface*
+*EndlessOS Login Screen*
 
 #### Issues and Troubleshooting
 ![Error Screenshot 1](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/1error.png)
-*Display resolution error before installing guest additions*
+*Bootlooping*
 
 ![Error Screenshot 2](https://github.com/Ananya-Addisu/Endless-OS/blob/main/images/2error.png)
-*Network connectivity issue with NAT configuration*
+*Display resolution issue*
 
 ## Issues and Solutions
 
