@@ -5,7 +5,6 @@
         style="max-width: 200px; height: auto; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));"
     ><!--<h2>Ananya Addisu | BDU1600957</h2>-->
 </div>
-</br>
 <hr>
 
 <details open>
@@ -27,7 +26,7 @@
 </details>
 
 <details open>
-<summary><strong>System Calls Implementation</strong></summary>
+<summary><strong>System Call Implementation</strong></summary>
 
 - [Understanding System Calls](https://endless-os.vercel.app/#systemcalls)
 - [The setpgid() System Call](https://endless-os.vercel.app/#systemcalls)
