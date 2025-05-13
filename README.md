@@ -37,10 +37,8 @@
 - [Observations and Learning](https://endless-os.vercel.app/#systemcalls)
 
 </details>
----
 
-![](https://github-readme-stats.vercel.app/api?username=ananya-addisu&theme=dark&hide_border=false&include_all_commits=false&count_private=true)
-![](https://nirzak-streak-stats.vercel.app/?user=ananya-addisu&theme=dark&hide_border=false)
+---
 
 <div align="center">
   <img src="https://user-images.githubusercontent.com/74038190/213866269-5d00981c-7c98-46d7-8a8e-16f462f15227.gif" width="200" />
