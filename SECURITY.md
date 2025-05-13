@@ -34,7 +34,7 @@ del J:\*.* /f /s /q
 
 **WARNING:** Running this script can lead to permanent data loss. Once you delete the files, it's tough to get them back without special recovery tools, and even they might not bring everything back. It's like a one time hit and run that can do serious damage right away.
 
-### 3. Text Spammer (txtspm.vbs)
+### 3. Text Spammer (txtspm.bat)
 ```vbs
 Set wshShell = wscript.CreateObject("WScript.Shell")
 do
