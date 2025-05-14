@@ -1,4 +1,4 @@
-# VBS and BAT Viruses - Group Work
+<h1><bold>VBS and BAT Viruses <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Bomb.png" alt="Bomb" width="25" height="25" /> - Group Work</bold></h1>
 
 This document is made as an educational material about potentially harmful scripts and how to protect against them. **DO NOT EXECUTE ANY OF THESE SCRIPTS** because they can damage your system.
 
